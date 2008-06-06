@@ -1,0 +1,173 @@
+﻿body {
+	margin: 6px;
+	padding: 0;
+	scrollbar-base-color: #F8F8F8;
+	scrollbar-arrow-color: #039;
+	font: 12px Tahoma, Verdana, "宋体";
+}
+textarea, input, object {
+	color: #000;
+	background: #FFF;
+	font: normal 12px Tahoma, Verdana, "宋体";
+}
+.custompage {
+	font: normal 11px Tahoma, Verdana, "宋体";
+	border: 1px solid #CCC;
+	width:15px;
+	height:15px;
+}
+select {
+	color: #000;
+	background: #FFF;
+	font: 11px Tahoma, Verdana, "宋体";
+}
+table {
+	font: 12px Tahoma, Verdana, "宋体";
+}
+.wordbreak {
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+a:link, a:visited {
+	text-decoration: none;
+	color: #036;
+	font-family: Tahoma, Verdana, "宋体";
+}
+a:hover {
+	text-decoration: none;
+	color: #F90;
+	font-family: Tahoma, Verdana, "宋体";
+}
+.header {
+	color: #FFF;
+	font: 12px Tahoma, Verdana, "宋体";
+}
+.header a:link {
+	text-decoration: none;
+	color: #FFF;
+}
+.header a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+.header a:hover {
+	text-decoration: none;
+	color: #FFFA20;
+}
+.smalltxt {
+	color: #666;
+	font: 11px Tahoma, Verdana, "宋体";
+}
+.code_main {
+	color: #666;
+	padding: 4px;
+	margin: 2px;
+	border: 1px dashed #666;
+	background: #FAFAFA;
+	font: 11px Verdana;
+}
+.code_head {
+	margin: 2px;
+	font: bold 12px Tahoma, Verdana, "宋体";
+}
+.calendar {
+	color: #666;
+	text-align: center;
+	font: 11px Verdana;
+}
+.calendar-week {
+	color: #666;
+	text-align: center;
+	font: bold 11px Tahoma;
+}
+.calendar-today {
+	color: #666;
+	background-image: url(../images/bg_today.gif); 
+	text-align: center;
+	font: 11px Verdana;
+}
+.calendar-thisday {
+	color: #666;
+	background-image: url(../images/bg_thisday.gif);
+	text-align: center;
+	font: 11px Verdana;
+}
+.content_head {
+	width: 100%;
+	padding: 4px;
+	border-top: 1px dashed #CCC;
+	border-right: 1px dashed #CCC;
+	border-bottom: 1px dashed #CCC;
+	border-left: 1px dashed #036;
+	background: #F3F3F3;
+	font: 12px Tahoma, Verdana, "宋体";
+}
+.forums {
+	width: 100%;
+	padding: 3px;
+	margin-left:8px;
+	margin-right:8px;
+	border-right: 1px dashed #CCC;
+	border-bottom: 1px dashed #CCC;
+	border-left: 1px dashed #036;
+	background: #F3F3F3;
+	font: 12px Tahoma, Verdana, "宋体";
+}
+.content_main {
+	padding: 4px;
+	width: 100%;
+	font: 12px Tahoma, Verdana, "宋体";
+}
+.siderbar_head {
+	width: 100%;
+	border-bottom: 1px dashed #CCC;
+	padding: 4px;
+	font: bold 12px Tahoma, Verdana, "宋体";
+}
+.siderbar_main {
+	padding: 4px;
+	width: 100%;
+	font: 12px Tahoma, Verdana, "宋体";
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+.message {
+	position: relative;
+	padding: 18px;
+	width: 95%;
+	text-align: center;
+	font: 12px/140% Tahoma, Verdana, "宋体";
+}
+.hyperlink {
+	border-left-width: 4px;
+	border-left-style: solid;
+	border-left-color: #698CC3;
+	margin: 4px 0;
+	width: 142px;
+	padding-left: 6px;
+}
+.msg_head {
+	font-weight: bold;
+	color: #FFF;
+	padding: 4px;
+	width: 92%;
+	text-align: center;
+	background: url(../images/msg_header.gif);
+}
+.msg_content {
+	padding: 24px;
+	width: 92%;
+	text-align: center;
+	border: 1px solid #0252AB;
+}
+.msg_main {
+	padding: 6px;
+	width: 92%;
+	text-align: center;
+	border: 1px solid #0252AB;
+}
+.arrow {
+	font-family: webdings;
+}

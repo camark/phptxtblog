@@ -1,0 +1,126 @@
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>我的留言板</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<meta content="Microsoft FrontPage 6.0" name="GENERATOR">
+		<link href="styles/default.css" rev="stylesheet" rel="stylesheet" type="text/css" media="all" />
+		<script language="JavaScript">
+	  <!--
+	    var now = new Date();
+	    var month = new Date( fixYear( now.getYear() ), now.getMonth(), 1 );
+	    var months = new Array( "January", "February", "March", "April",
+				      "May", "June", "July", "August", "September",
+				      "October", "November", "December" );
+	    function fixYear( year )
+	    {
+	      return( year < 1000 ? year + 1900 : year );
+	    }
+	    
+	    function getNumberDays( d )
+	    {
+	      switch( d.getMonth() + 1 )
+	      {
+		case 1: case 3: case 5: case 7:
+		case 8: case 10: case 12:
+		  return( 31 );
+		case 4: case 6: case 9: case 11:
+		  return( 30 );
+		case 2:
+		  return( 28 + ( d.getYear % 4 == 0 ? 1 : 0 ) );
+	      }
+	    }
+	  //-->
+		</script>
+	</head>
+	<body>
+		<table height="82" cellspacing="0" cellpadding="0" width="768" align="center" background="Images/blog_header.gif"
+			border="0">
+			<tr>
+				<td width="2%" rowspan="2">
+					<img height="82" src="Images/blog_headerright.gif" width="18"></td>
+				<td width="13%" rowspan="2">
+					<img height="82" src="Images/blog_logo.gif" width="100"></td>
+				<td class="header" width="83%" height="54">&nbsp;<strong>.Net极限</strong></td>
+				<td class="header" width="2%" rowspan="2">
+					<img height="82" src="Images/blog_headerleft.gif" width="18"></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+		<table class="wordbreak" cellspacing="6" cellpadding="4" width="768" align="center" background="Images/blog_main.gif"
+			border="0">
+			<tr>
+				<td width="160" bgcolor="#f8f8f8" valign="top">
+					<div class="siderbar_head">
+						<img src="Images/sider_calendar.gif" align="absMiddle" border="0"> 日历
+					</div>
+					<script>
+							document.write("<table border=0 cellpadding=2 cellspacing=1 width=100% background=Images/Calendar/month"+(now.getMonth()+1)+".gif>");
+					</script>				
+			<tr>
+				<td align="middle" colspan="7">
+					<script lanugage="javascript">
+   	    document.write(now.getYear()+"-"+(now.getMonth()+1));
+					</script>
+				</td>
+			</tr>
+			<tr>
+			</tr>
+			<tr class="calendar-week" bgcolor="#f8f8f8">
+				<td><b>日</b></td>
+				<td><b>一</b></td>
+				<td><b>二</b></td>
+				<td><b>三</b></td>
+				<td><b>四</b></td>
+				<td><b>五</b></td>
+				<td><b>六</b></td>
+			</tr>
+			<tr>
+			<script language="JavaScript">
+					<!--
+					  var startDay = month.getDay();
+					  for( i = 0 ; i < startDay ; i++ )
+					  {
+						document.write( "<td></td>" );
+					  }
+
+					  var numDays = getNumberDays( month );
+					  for( i = 0 ; i < numDays ; i++ )
+					  {
+						if( ( i + startDay + 1 ) % 7 == 1 )
+						{
+						  document.write( "</tr><tr>" );
+						}
+
+					if(i+1==now.getDate())
+					{
+					   document.write( "<td class='calendar'><font color=blue>" +
+												 (i+1) + "</font></td>" ); 
+					}
+					else
+					{
+					   document.write( "<td class='calendar'>" +
+												 (i+1) + "</td>" ); 
+					}
+						
+					  }        
+					// -->
+				</script>
+			</tr>
+		</table>
+		</td>
+		<td></td>
+		</tr> 
+		</table>
+		<table width="768" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+				<td><img src="images/blog_footerright.gif" width="18" height="30"></td>
+				<td width="100%" align="center" valign="middle" background="images/blog_footer.gif"
+					style="padding-bottom:2px; ">
+					Hello,gm</td>
+				<td><img src="images/blog_footerleft.gif" width="18" height="30"></td>
+			</tr>
+		</table>
+	</body>
+</html>

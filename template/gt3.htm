@@ -1,0 +1,164 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0049)http://localhost/blog/admincp.asp?action=category -->
+<HTML><HEAD><TITLE>欢迎光临 - Lovezhuyan 's BLOG - Power by L-Blog</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META content=loveyuki@gmail.com,Loveyuki name=author>
+<META content="Loveyuki's BLOG - Powered by Loveyuki" name=description>
+<META content="Blog,博客,部落格,Loveyuki,L-Blog,Soar Studio,ASP,Web" 
+name=keywords><LINK href="favicon.ico" type=image/x-icon rel=icon><LINK 
+href="favicon.ico" type=image/x-icon rel="shortcut icon"><LINK 
+title="Loveyuki's BLOG" href="http://kfch-02/blog/blogrss1.asp" 
+type=application/rss+xml rel=alternate><LINK title="Loveyuki's BLOG" 
+href="http://kfch-02/blog/blogrss2.asp" type=application/rss+xml 
+rel=alternate><LINK rev=stylesheet media=all href="gt3_files/default.css" 
+type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript src="gt3_files/common.js" 
+type=text/javascript></SCRIPT>
+
+<META content="MSHTML 6.00.3790.218" name=GENERATOR></HEAD>
+<BODY>
+<TABLE height=82 cellSpacing=0 cellPadding=0 width=768 align=center 
+background=gt3_files/blog_header.gif border=0>
+  <TBODY>
+  <TR>
+    <TD width="2%" rowSpan=2><IMG height=82 
+      src="gt3_files/blog_headerright.gif" width=18></TD>
+    <TD width="13%" rowSpan=2><IMG height=82 src="gt3_files/blog_logo.gif" 
+      width=100></TD>
+    <TD class=header width="83%" height=54>&nbsp;<STRONG>欢迎光临 Lovezhuyan 's 
+      BLOG</STRONG></TD>
+    <TD class=header width="2%" rowSpan=2><IMG height=82 
+      src="gt3_files/blog_headerleft.gif" width=18></TD></TR>
+  <TR>
+    <TD class=header style="PADDING-BOTTOM: 2px" vAlign=center align=right 
+    height=24><A 
+      href="http://localhost/blog/default.asp">日志首页</A>&nbsp;|&nbsp;<A 
+      href="http://localhost/blog/default.asp?cateID=1">心情故事</A>&nbsp;|&nbsp;<A 
+      href="http://localhost/blog/default.asp?cateID=2">我的程序</A>&nbsp;|&nbsp;<A 
+      href="http://localhost/blog/default.asp?cateID=3">搞笑一下</A>&nbsp;|&nbsp;<A 
+      href="http://localhost/blog/default.asp?cateID=4">空中楼阁</A></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=6 cellPadding=4 width=768 align=center 
+background=gt3_files/blog_main.gif border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top noWrap align=middle width=128 bgColor=#ffffff><BR><BR>
+      <DIV class=msg_head>管理面板导航</DIV>
+      <DIV class=msg_main><A 
+      href="http://localhost/blog/admincp.asp"><B>管理首页</B></A><BR><A 
+      href="http://localhost/blog/admincp.asp?action=setting"><B>一般设置</B></A><BR><A 
+      href="http://localhost/blog/admincp.asp?action=category"><B>分类管理</B></A><BR><A 
+      href="http://localhost/blog/admincp.asp?action=member"><B>会员管理</B></A><BR><A 
+      href="http://localhost/blog/admincp.asp?action=database"><B>数据管理</B></A><BR><A 
+      href="http://localhost/blog/admincp.asp?action=attachment"><B>附件管理</B></A><BR><A 
+      href="http://localhost/blog/admincp.asp?action=smilies"><B>表情管理</B></A><BR><A 
+      href="http://localhost/blog/admincp.asp?action=keywords"><B>关键字管理</B></A><BR><A 
+      href="http://localhost/blog/admincp.asp?action=links"><B>链接管理</B></A><BR><A 
+      href="http://localhost/blog/admincp.asp?action=linkscheck"><B>链接验证</B></A><BR><A 
+      href="http://localhost/blog/admincp.asp?action=favorite"><B>书签管理</B></A><BR><A 
+      href="http://localhost/blog/admincp.asp?action=logout"><B>退出登录</B></A></DIV>
+      <DIV></DIV><BR><BR></TD>
+    <TD vAlign=top align=middle width="100%" bgColor=#ffffff>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top align=middle><BR>
+            <TABLE cellSpacing=1 cellPadding=6 width="99%" align=center 
+            bgColor=#cccccc border=0>
+              <TBODY>
+              <TR>
+                <TD class=siderbar_head bgColor=#ffffff>Lovezhuyan 's BLOG 
+                分类管理</TD></TR>
+              <FORM name=edit_Category 
+              action=admincp.asp?action=category&amp;type=EditCate method=post>
+              <TR>
+                <TD vAlign=top align=middle bgColor=#ffffff>
+                  <TABLE cellSpacing=1 cellPadding=4 width="90%" bgColor=#cccccc 
+                  border=0>
+                    <TBODY>
+                    <TR bgColor=#efefef>
+                      <TD noWrap>删除？</TD>
+                      <TD noWrap>名称</TD>
+                      <TD noWrap>排序</TD>
+                      <TD width="100%">操作</TD></TR>
+                    <TR bgColor=#ffffff>
+                      <TD align=middle><INPUT id=cate_Dele type=checkbox 
+                        value=1 name=cate_Dele></TD>
+                      <TD><INPUT id=cate_ID type=hidden value=1 
+                        name=cate_ID><INPUT id=cate_Name size=15 value=心情故事 
+                        name=cate_Name></TD>
+                      <TD><INPUT id=cate_Order size=5 value=1 
+                      name=cate_Order></TD>
+                      <TD>移动此分类日志到：<SELECT id=Edit_CateMoveTo 
+                        name=Edit_CateMoveTo><OPTION value=0 
+                          selected>选择分类</OPTION><OPTION 
+                          value=1>心情故事</OPTION><OPTION 
+                          value=2>我的程序</OPTION><OPTION 
+                          value=3>搞笑一下</OPTION><OPTION 
+                        value=4>空中楼阁</OPTION></SELECT></TD></TR>
+                    <TR bgColor=#ffffff>
+                      <TD align=middle><INPUT id=cate_Dele type=checkbox 
+                        value=2 name=cate_Dele></TD>
+                      <TD><INPUT id=cate_ID type=hidden value=2 
+                        name=cate_ID><INPUT id=cate_Name size=15 value=我的程序 
+                        name=cate_Name></TD>
+                      <TD><INPUT id=cate_Order size=5 value=2 
+                      name=cate_Order></TD>
+                      <TD>移动此分类日志到：<SELECT id=Edit_CateMoveTo 
+                        name=Edit_CateMoveTo><OPTION value=0 
+                          selected>选择分类</OPTION><OPTION 
+                          value=1>心情故事</OPTION><OPTION 
+                          value=2>我的程序</OPTION><OPTION 
+                          value=3>搞笑一下</OPTION><OPTION 
+                        value=4>空中楼阁</OPTION></SELECT></TD></TR>
+                    <TR bgColor=#ffffff>
+                      <TD align=middle><INPUT id=cate_Dele type=checkbox 
+                        value=3 name=cate_Dele></TD>
+                      <TD><INPUT id=cate_ID type=hidden value=3 
+                        name=cate_ID><INPUT id=cate_Name size=15 value=搞笑一下 
+                        name=cate_Name></TD>
+                      <TD><INPUT id=cate_Order size=5 value=3 
+                      name=cate_Order></TD>
+                      <TD>移动此分类日志到：<SELECT id=Edit_CateMoveTo 
+                        name=Edit_CateMoveTo><OPTION value=0 
+                          selected>选择分类</OPTION><OPTION 
+                          value=1>心情故事</OPTION><OPTION 
+                          value=2>我的程序</OPTION><OPTION 
+                          value=3>搞笑一下</OPTION><OPTION 
+                        value=4>空中楼阁</OPTION></SELECT></TD></TR>
+                    <TR bgColor=#ffffff>
+                      <TD align=middle><INPUT id=cate_Dele type=checkbox 
+                        value=4 name=cate_Dele></TD>
+                      <TD><INPUT id=cate_ID type=hidden value=4 
+                        name=cate_ID><INPUT id=cate_Name size=15 value=空中楼阁 
+                        name=cate_Name></TD>
+                      <TD><INPUT id=cate_Order size=5 value=4 
+                      name=cate_Order></TD>
+                      <TD>移动此分类日志到：<SELECT id=Edit_CateMoveTo 
+                        name=Edit_CateMoveTo><OPTION value=0 
+                          selected>选择分类</OPTION><OPTION 
+                          value=1>心情故事</OPTION><OPTION 
+                          value=2>我的程序</OPTION><OPTION 
+                          value=3>搞笑一下</OPTION><OPTION 
+                        value=4>空中楼阁</OPTION></SELECT></TD></TR>
+                    <TR bgColor=#ffffff>
+                      <TD noWrap><B>添加</B>：</TD>
+                      <TD><INPUT id=new_CateName size=15 name=new_CateName></TD>
+                      <TD><INPUT id=new_CateOrder size=5 
+name=new_CateOrder></TD>
+                      <TD></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD align=middle bgColor=#ffffff><INPUT type=submit value=" 确定编辑 " name=Submit> 
+                </TD></TR></FORM></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=768 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD><IMG height=30 src="gt3_files/blog_footerright.gif" width=18></TD>
+    <TD style="PADDING-BOTTOM: 2px" vAlign=center align=middle width="100%" 
+    background=gt3_files/blog_footer.gif><SPAN 
+      style="FONT-SIZE: 11px; COLOR: #ffffff">Powered by <A 
+      style="FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #fffa20" 
+      href="http://www.loveyuki.com/" target=_blank>L-Blog V1.08 (SE) Final</A> 
+      © 2003-04 , </SPAN><SPAN style="FONT-SIZE: 11px; COLOR: #ffffff">Processed 
+      in 0.000000 second(s) , 2 queries</SPAN></TD>
+    <TD><IMG height=30 src="gt3_files/blog_footerleft.gif" 
+  width=18></TD></TR></TBODY></TABLE></BODY></HTML>
