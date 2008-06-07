@@ -1,0 +1,10 @@
+<?php
+	if(file_exists('install_site.php'))
+	{
+		header('location:install/install.htm');
+	}
+	else
+	{
+		header('location:ShowArticle.php');
+	}
+?>
