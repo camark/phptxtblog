@@ -1,6 +1,6 @@
 <html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
 <?php
-	$gHomePage='ShowArticle.php';
+	include('SiteConfig.php');
 ?>
 <head>
 	<title>杨易的Blog</title>
@@ -17,7 +17,7 @@
 					<img height="82" src="images/blog_headerright.gif" width="18"></td>
 				<td width="13%" rowspan="2">
 					<img height="82" src="images/blog_logo.gif" width="100"></td>
-				<td class="header" width="83%" height="54">&nbsp;<strong>.Net极限</strong></td>
+				<td class="header" width="83%" height="54">&nbsp;<strong><?php print $siteName; ?></strong></td>
 				<td class="header" width="2%" rowspan="2">
 					<img height="82" src="images/blog_headerleft.gif" width="18"></td>
 			</tr>

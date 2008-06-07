@@ -74,11 +74,11 @@
 				<div class="siderbar_head">
 					<img src="images/sider_siteinfo.gif" border="0" align="absmiddle" /> 站点统计
 				</div>
-				<div class="siderbar_main">日志：<?= gaCount() ?> 篇<br>
-					评论：<?= getCommentCount() ?> 篇<br>
+				<div class="siderbar_main">日志：<?php $blogCount=gaCount(); if(trim($blogCount)=='') print '0'; else print trim($blogCount); ?> 篇<br>
+					评论：<?php $blogCount=getCommentCount(); if(trim($blogCount)=='') print '0'; else print trim($blogCount); ?> 篇<br>
 					引用：0 个</a><br>
 					会员：1 人<br>
-					<a href="gVisit.php">访问：<?= getVisitCount() ?> 次</a><br>
+					<a href="gVisit.php">访问：<?php $blogCount=getVisitCount(); if(trim($blogCount)=='') print '0'; else print trim($blogCount); ?> 次</a><br>
 					建立：<?= $createTime ?>
 				</div>
 				<br>

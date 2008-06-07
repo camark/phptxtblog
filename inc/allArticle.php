@@ -108,5 +108,5 @@
 			 echo "[$i]";
 	 }
 ?>
-<A href="ShowArticle.php?page=<?= $pageCount ?>"><IMG src="images/icon_al.gif" align=absMiddle border=0></A>	
+<A href="ShowArticle.php?page=<?php if(isset($pageCount)) print "$pageCount"; else print "1"; ?>"><IMG src="images/icon_al.gif" align=absMiddle border=0></A>	
 </SPAN>
