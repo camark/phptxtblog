@@ -1,7 +1,4 @@
 <html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
-<?php
-	$gHomePage='ShowArticle.php';
-?>
 <head>
 	<title>Welecom to PhpTextBlog</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
@@ -56,28 +53,32 @@
 			  			$fileHandle=fopen($fileName,'w');
 			  			if(!$fileHandle)
 			  			{
-			  				print "Open File Error");
+			  				print "Open File Error";
 			  			}
 			  			else
 			  			{
 				  			fwrite($fileHandle,"<?php"."\n");
-				  			fwrite($fileHandle,"\t".'$siteName='.$siteName."\n");
-				  			fwrite($fileHandle,"\t".'$siteUrl='.$siteUrl."\n");
-				  			fwrite($fileHandle,"\t".'$CopyRight='.$_POST['copyRight']."\n");
-				  			fwrite($fileHandle,"\t".'$createTime='.date('Y-m-j')."\n");
+				  			fwrite($fileHandle,"\t".'$siteName="'.$siteName.'"'.";\r\n");
+				  			fwrite($fileHandle,"\t".'$siteUrl="'.$siteUrl.'"'.";\r\n");
+				  			$copyRight=$_POST['copyRight'];
+				  			fwrite($fileHandle,"\t".'$CopyRight="'.$copyRight.'"'.";\r\n");
+				  			$createTime=date('Y-m-j');
+				  			fwrite($fileHandle,"\t".'$createTime="'.$createTime.'"'.";\r\n");
 				  			$adminPass=$_POST['adminPass'];
 				  			$adminPass=trim($adminPass);
 				  			
 				  			if($adminPass=='')
-				  				$adminPass=''9988';
+				  				$adminPass='9988';
 				  				
-				  			fwrite($fileHandle,"\t".'$adminpass='.$adminPass."\n");
+				  			fwrite($fileHandle,"\t".'$adminpass="'.$adminPass.'"'.";\n");
 				  			fwrite($fileHandle,"?>"."\n");
 				  			fclose($fileHandle);
 				  			
 				  			print "<h4>Configuration!</h4>";
 				  			print "Save Config Ok!<br>";
-				  			print 'Press this <a href="index.htm">link </a>to See';	
+				  			print 'Press this <a href="../index.htm">link </a>to See';	
+				  			
+				  			unlink("../install_site.php");
 			  			}
 			  		}
 			  	}

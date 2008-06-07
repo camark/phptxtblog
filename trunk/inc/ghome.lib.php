@@ -107,11 +107,16 @@
 	}
 
 	function gaCount(){
+		$count=0;
 		$countFile='data/arcount.cgi';
 		if(file_exists($countFile)){
 			
 			$lines=file($countFile);			
 			$count=$lines[0];
+			
+			$count=trim($count);
+			if($count=='' || $count=='0')
+				$count=0;
 		}
 		else
 		{
@@ -156,6 +161,6 @@
 	}
 
 	function getBlogBaseUrl(){
-		return 'http://gm8pleasure.vip.533.net/cgi-bin/GHomePHP';
+		return $siteUrl;
 	}
 ?>

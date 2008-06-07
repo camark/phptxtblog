@@ -22,7 +22,7 @@
 			foreach($this->webStations as $key=>$value){
 				$url_tips=$value[0];
 				$url_img=$value[1];
-				echo '<a href="'.$key.$this->rss_file.'" target="_blank" title="'.$url_tips.'"><img src="images/rss/'.$url_img.'" style="border: medium none;" align="middle"><br>';
+				echo '<a href="'.$key.$this->rss_file.'" target="_blank" title="'.$url_tips.'"><img src="images/rss/'.$url_img.'" style="border: medium none;" align="middle"></a><br>';
 			}
 		}
 	}	
